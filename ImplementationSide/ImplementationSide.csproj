@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8F9124CF-4B0B-4C5A-A13E-3303A7EF02AF}</ProjectGuid>
+    <ProjectGuid>{D9E0387C-327F-4B7D-A718-C299DE472B63}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>TestableDokan</RootNamespace>
-    <AssemblyName>TestableDokan</AssemblyName>
+    <RootNamespace>ImplementationSide</RootNamespace>
+    <AssemblyName>ImplementationSide</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DokanNet, Version=1.1.0.3, Culture=neutral, PublicKeyToken=cef3dedf553bda55, processorArchitecture=MSIL">
+      <HintPath>..\packages\DokanNet.1.1.0.3\lib\net46\DokanNet.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -42,11 +45,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MockableDokan\ActualDokanOperationsWrapper.cs" />
+    <Compile Include="MockableDokan\DokanFileInfoMockBase.cs" />
+    <Compile Include="MockableDokan\FileInformation.cs" />
+    <Compile Include="MockableDokan\FileInformationBase.cs" />
+    <Compile Include="MockableDokan\IDokanFileInfoWrapper.cs" />
+    <Compile Include="MockableDokan\IFileInformation.cs" />
+    <Compile Include="MockableDokan\IMockableDokanOperations.cs" />
+    <Compile Include="MockableDokan\PassthruDFI.cs" />
+    <Compile Include="MockableDokan\PassthruDokanBase.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="ImplementationSide-README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
