@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestableDokan", "TestableDokan\TestableDokan.csproj", "{8F9124CF-4B0B-4C5A-A13E-3303A7EF02AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F9124CF-4B0B-4C5A-A13E-3303A7EF02AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F9124CF-4B0B-4C5A-A13E-3303A7EF02AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F9124CF-4B0B-4C5A-A13E-3303A7EF02AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F9124CF-4B0B-4C5A-A13E-3303A7EF02AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {253E663B-9509-409D-8415-811B20B44C0A}
+	EndGlobalSection
+EndGlobal
